@@ -12,6 +12,59 @@ body {
     background-color: black;
 }
 
+.navbar-container {
+    display: flex;
+    align-items: center;
+    font-family: 'Sen', sans-serif;
+    padding: 0 50px;
+    height: 100%;
+    color: white;
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.logo {
+    font-family: 'Sen', sans-serif;
+    font-size: 30px;
+    color: rgb(114, 230, 114);
+}
+.menu-container {
+    flex: 6;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+}
+
+.menu-list-item {
+    margin-right: 30px;
+}
+
+.menu-list-item.active {
+    font-weight: bold;
+}
+
+.profile-container {
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+.profile-text-container {
+    margin: 0 20px;
+}
+
+.profile-pic {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
 .side-bar {
     width: 50px;
     height: 100vh;
