@@ -1,3 +1,4 @@
+/* Root Settings */
 * {
 margin: 0%  ;
 }
@@ -10,6 +11,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* Navigation Bar */
 .navbar{
     width: 100vw;
     height: 50px;
@@ -93,7 +95,8 @@ body {
     border-radius: 50%;
     cursor: pointer;
 }
-
+ 
+/* Side Bar */
 .side-bar {
     width: 50px;
     height: 100vh;
@@ -112,9 +115,10 @@ body {
     margin-bottom: 35px;
 }
 
+/* Content Section */
 .container {
     background-color: #151515;
-    height: calc(100vh - 50px);
+    min-height: calc(100vh - 50px);
     color: whitesmoke;
 }
 
@@ -145,4 +149,66 @@ body {
     border-radius: 10px;
     outline: none;
     font-weight: bold;
+}
+
+.movie-list-container {
+    padding: 20px;
+
+}
+
+.movie-list {
+    display: flex;
+    align-items: center;
+    height: 300px;
+}
+
+.movie-list-item{
+    margin-right: 30px;
+    position: relative;
+}
+
+.movie-list-item:hover .movie-list-image:hover {
+    transform: scale(1.2);
+    margin: 0 30px;  
+}
+
+.movie-list-image {
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+    transition: all 1s ease-in-out;
+    border-radius: 20px;
+}
+
+.movie-list-item-title{
+    background-color: #333;
+    padding: 0 10px;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    /*opacity: 0;*/
+}
+
+.movie-list-item-desc{
+    background-color: #333;
+    padding: 10px;
+    font-size: 14px;
+    position: absolute;
+    top: 30%;
+    left: 50px;
+    width: 230px;
+}
+.movie-list-item-button {
+    padding: 10px;
+    background-color: var(--logo-color);
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
 }
